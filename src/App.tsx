@@ -1,21 +1,17 @@
-
-import './App.css'
-import MyButton from './components/Button'
+import "./App.css";
+import CounterProvider from "./provider/counter";
+import NewButton from "./components/newButton";
 
 function App() {
- 
-
   return (
     <>
-    <div>
-      <h1 className="text-3xl font-bold underline bg-emerald-900">
-        Hello world!
-      </h1>
-      <MyButton text = "Click Me" isclicked = {true} />
-    </div>
-     
+      <div>
+        <CounterProvider>
+          <NewButton text="click" />
+        </CounterProvider>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
