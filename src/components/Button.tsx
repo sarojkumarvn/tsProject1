@@ -6,11 +6,11 @@ interface MyButtonProps {
   isClicked?: boolean;
 }
 
-interface Book {
-  name: string;
-  price: number;
-}
-const MyButton: React.FC<MyButtonProps> = (props) => {
+// interface Book {
+//   name: string;
+//   price: number;
+// }
+const MyButton: React.FC<MyButtonProps> = () => {
   //implicit typing is like not giving the type it automatically detects
   // but explicit typing is like giving the type, the type will define as a interface before
 
